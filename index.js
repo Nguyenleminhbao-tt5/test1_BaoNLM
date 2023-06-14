@@ -37,9 +37,9 @@ console.log(listTime)
 setInterval(()=>{
     const date = new Date()
 
-    let hour =  date.getHours() >10 ? `${date.getHours()}` : `0${date.getHours()}`
-    let minute = date.getMinutes() >10? `${date.getMinutes()}` : `0${date.getMinutes()}`
-    let second = date.getSeconds() >10? `${date.getSeconds()}` : `0${date.getSeconds()}`
+    let hour =  date.getHours() >=10 ? `${date.getHours()}` : `0${date.getHours()}`
+    let minute = date.getMinutes() >=10? `${date.getMinutes()}` : `0${date.getMinutes()}`
+    let second = date.getSeconds() >=10? `${date.getSeconds()}` : `0${date.getSeconds()}`
     listTime[1].innerText = hour
     listTime[2].innerText = minute
     listTime[3].innerText = second
